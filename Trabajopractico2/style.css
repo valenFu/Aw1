@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap');
+@import 'navBar.css';
+@import 'item.css';
+@import	'ropaint.css';
+
+body{
+    background-color: #fffaf4;
+}
+.sesion {/* botones de sesion(iniciar y registrar)*/
+    background-color: bisque;
+    color: rgb(99, 10, 41);
+    border: 2px solid rgb(99, 10, 41);
+    border-radius: 20px; 
+    padding: 10px 20px;
+    font-family: "Fredoka", sans-serif;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 15px ;
+    text-decoration: none !important;
+    font-weight: 500;
+    transition: ease-in-out 0.5s;
+}
+
+/* hover cambia el color al pasar el cursor*/
+.sesion:hover {
+    background-color: rgb(218, 163, 97);
+    color: white;
+}
+.cerrarSesion{
+    background-color: bisque;
+    color: rgb(99, 10, 41);
+    border: 2px solid #630a29;
+    border-radius: 20px; 
+    padding: 10px 20px;
+    font-family: "Fredoka", sans-serif;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 15px ;
+    text-decoration: none;
+    font-weight: 500;
+    transition: ease-in-out 0.5s;
+}
+.cerrarSesion:hover {
+    background-color: rgb(218, 163, 97);
+    color: white;
+}
+.flexContainer{ /* flex hace que rea responsive(se adapta a la pantalla)*/
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.imagen{
+    display: flex;
+    justify-content: center;
+}
+h1{
+    text-align: center;
+}
+nav{/* letra de la barra de navegacion*/
+    font-family: "Fredoka", sans-serif;
+ margin-top: 50px;
+}
+.explicacion{/* titulo explicaion*/
+font-size: 0,5%;
+font-family: "Fredoka", sans-serif;
+color: rgb(99, 10, 41);
+text-align: center;
+}
+.contenedorExplicacion{/* texto explicativo*/
+    font-family: "Fredoka", sans-serif;
+    background-color: bisque;
+    color: rgb(99, 10, 41);
+    text-align: center;
+    border: 5px solid rgb(99, 10, 41);
+    border-radius: 20px;
+}
+.text{
+    font-family: "Fredoka", sans-serif;
+    background-color: bisque;
+    color: rgb(99, 10, 41);
+    text-align: center;
+    border: 5px solid rgb(99, 10, 41);
+    border-radius: 20px;
+}
+
