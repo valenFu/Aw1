@@ -1,12 +1,11 @@
-// Estructura de datos:
+//estructura de datos
 const pages = [
-    { title: "Inicio", url: "index.html" },
-    { title: "Ropa Interior", url: "Ropa_interior.html" },
-    { title: "Ropa", url: "Ropa.html" },
-    { title: "Calzado", url: "Calzado.html" },
-    { title: "Artículos de Hogar", url: "Hogar.html" },
-];
-
+    { title: "Inicio", url: "../index.html" },
+    { title: "Ropa Interior", url: "paginas/Ropa_interior.html" },
+    { title: "Ropa", url: "paginas/Ropa.html" },
+    { title: "Calzado", url: "paginas/Calzado.html" },
+    { title: "Artículos de Hogar", url: "paginas/Hogar.html" },
+]
 document.addEventListener("DOMContentLoaded", () => {
     const navbar = document.querySelector('.navegacion ul');
 
@@ -63,7 +62,7 @@ document.querySelector('.login-form').addEventListener('submit', function(event)
     // Verificar las credenciales
     if (nombre === storedNombre && apellido === storedApellido && email === storedEmail && contraseña === storedContraseña) {
         alert('Inicio de sesión exitoso!');
-        // Aquí puedes redirigir al usuario a otra página, por ejemplo, a un panel de usuario
+        // aca se puede redirigir al usuario a otra página, por ejemplo, a un panel de usuario
         window.location.href = 'index.html'; // Cambia a la página del panel de usuario
     } else {
         alert('Nombre, apellido, email o contraseña incorrectos.');

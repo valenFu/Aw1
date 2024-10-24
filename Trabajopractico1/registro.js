@@ -1,5 +1,5 @@
-document.getElementById('btnEnviar').addEventListener('click', function(event) {
-    event.preventDefault(); // Evita el envío del formulario
+document.getElementById('registroForm').addEventListener('submit', function(event) {
+    event.preventDefault(); // Evita el envío del formulario para manejarlo manualmente
 
     // Obtener los valores ingresados
     const nombre = document.getElementById('txtNombre').value;
@@ -16,6 +16,7 @@ document.getElementById('btnEnviar').addEventListener('click', function(event) {
     localStorage.setItem('fechaNacimiento', fechaNacimiento);
 
     alert('Usuario registrado exitosamente!');
+
     // Redirigir a la página de login
-    window.location.href = 'login.html'; // Cambia a la página de login
+    window.location.href = 'sesion/login.html'; 
 });
