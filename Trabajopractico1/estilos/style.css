@@ -1,71 +1,83 @@
 @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap');
 @import 'navBar.css';
 @import 'item.css';
-@import	'ropaint.css';
+@import 'ropaint.css';
 
-body{
+body {
     background-color: #fffaf4;
 }
-.sesion {/* botones de sesion(iniciar y registrar)*/
+
+/* Botones de sesión (iniciar y registrar) */
+.sesion {
     background-color: bisque;
     color: rgb(99, 10, 41);
     border: 2px solid rgb(99, 10, 41);
-    border-radius: 20px; 
+    border-radius: 20px;
     padding: 10px 20px;
     font-family: "Fredoka", sans-serif;
     cursor: pointer;
     text-decoration: none;
-    font-size: 15px ;
-    text-decoration: none !important;
+    font-size: 15px;
     font-weight: 500;
     transition: ease-in-out 0.5s;
 }
-/* hover cambia el color al pasar el cursor*/
+
 .sesion:hover {
     background-color: rgb(218, 163, 97);
     color: white;
 }
-.cerrarSesion{
+
+/* Botón de cerrar sesión */
+.cerrarSesion {
     background-color: bisque;
     color: rgb(99, 10, 41);
     border: 2px solid #630a29;
-    border-radius: 20px; 
+    border-radius: 20px;
     padding: 10px 20px;
     font-family: "Fredoka", sans-serif;
     cursor: pointer;
     text-decoration: none;
-    font-size: 15px ;
-    text-decoration: none;
+    font-size: 15px;
     font-weight: 500;
     transition: ease-in-out 0.5s;
 }
+
 .cerrarSesion:hover {
     background-color: rgb(218, 163, 97);
     color: white;
 }
-.flexContainer{ /* flex hace que rea responsive(se adapta a la pantalla)*/
+
+/* Contenedor flexible para hacer que sea responsive */
+.flexContainer {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
 }
-.imagen{
+
+.imagen {
     display: flex;
     justify-content: center;
 }
-h1{
+
+h1 {
     text-align: center;
 }
-nav{/* letra de la barra de navegacion*/
+
+nav {
     font-family: "Fredoka", sans-serif;
- margin-top: 50px;
+    margin-top: 50px;
 }
-.explicacion{/* titulo explicaion*/
-font-size: 0,5%;
-font-family: "Fredoka", sans-serif;
-color: rgb(99, 10, 41);
-text-align: center;
+
+/* Título de explicación */
+.explicacion {
+    font-size: 1.5em; /* Ajuste de tamaño */
+    font-family: "Fredoka", sans-serif;
+    color: rgb(99, 10, 41);
+    text-align: center;
 }
-.contenedorExplicacion{/* texto explicativo*/
+
+/* Contenedor de texto explicativo */
+.contenedorExplicacion, .text {
     font-family: "Fredoka", sans-serif;
     background-color: bisque;
     color: rgb(99, 10, 41);
@@ -73,46 +85,44 @@ text-align: center;
     border: 5px solid rgb(99, 10, 41);
     border-radius: 20px;
 }
-.text{
-    font-family: "Fredoka", sans-serif;
-    background-color: bisque;
-    color: rgb(99, 10, 41);
-    text-align: center;
-    border: 5px solid rgb(99, 10, 41);
-    border-radius: 20px;
-}
-.eliminar{
+
+.eliminar {
     margin-top: 10px;
 }
-/* Estilo para el contenedor principal */
-.contenedorItem {
-    display: flex;             
-    flex-wrap: wrap;           
-    justify-content: space-around; 
-    gap: 20px;                
+
+/* Estilo para los contenedores principales */
+.contenedorItem, .contenedorCarrito {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
     padding: 20px;
-    align-items: flex-start;   
+    align-items: flex-start;
 }
-/* Estilo para cada tarjeta */
+
+/* Estilo para cada tarjeta de producto */
 .item {
-    flex: 1 1 200px;           /* Establece un tamaño fijo para las tarjetas */
-    box-sizing: border-box;    /* Incluye padding y bordes en el tamaño total */
+    flex: 1 1 200px;
+    box-sizing: border-box;
     border: 4px solid rgb(99, 10, 41);
     padding: 10px;
     text-align: center;
-    max-width: 300px;          
-    background-color: bisque; 
+    max-width: 300px;
+    background-color: bisque;
 }
+
 /* Imagen en la tarjeta */
 .item img {
-    max-width: 100%;          
-    height: auto;              
+    max-width: 100%;
+    height: auto;
 }
+
 /* Estilo para el título */
 .item h3 {
     font-size: 1.2em;
     margin: 10px 0;
 }
+
 /* Estilo para el precio */
 .item p {
     margin: 10px 0;
@@ -135,6 +145,11 @@ text-align: center;
 
 .item button.eliminar {
     background-color: red;
-    font-family: "Fredoka", sans-serif;
 }
+.precioTotal{
+    font-family: "Fredoka", sans-serif;
+    font-size: 0.5cm;
+    font-weight: bold;
+}
+
 

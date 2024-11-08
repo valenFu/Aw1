@@ -3,7 +3,7 @@ function mostrarProductosPorCategoria(categoria) {
     const container = document.querySelector('.contenedorItem');
 
     // Cargar el archivo JSON
-    fetch('../productos.json')
+    fetch('../datos/Productos.json')
         .then(response => response.json())
         .then(data => {
             const products = data.productos;

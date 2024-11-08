@@ -1,5 +1,5 @@
 document.querySelector('.login-form').addEventListener('submit', function(event) {
-    event.preventDefault(); // Evita el envío del formulario
+    event.preventDefault();
 
     // Obtener los valores ingresados
     const nombre = document.getElementById('txtNombre').value;
@@ -7,17 +7,23 @@ document.querySelector('.login-form').addEventListener('submit', function(event)
     const email = document.getElementById('txtEmail').value;
     const contraseña = document.getElementById('txtContraseña').value;
 
-    // Obtener los datos almacenados en localStorage
-    const storedNombre = localStorage.getItem('nombre');
-    const storedApellido = localStorage.getItem('apellido');
-    const storedEmail = localStorage.getItem('email');
-    const storedContraseña = localStorage.getItem('contraseña');
+    // Obtener el usuario registrado desde localStorage
+    const usuarioRegistrado = JSON.parse(localStorage.getItem('usuarioRegistrado'));
 
-    // Verificar las credenciales
-    if (nombre === storedNombre && apellido === storedApellido && email === storedEmail && contraseña === storedContraseña) {
+    // Verificar que el usuario existe y las credenciales coinciden
+    if (usuarioRegistrado &&
+        usuarioRegistrado.nombre === nombre &&
+        usuarioRegistrado.apellido === apellido &&
+        usuarioRegistrado.email === email &&
+        usuarioRegistrado.contraseña === contraseña) {
+
         alert('Inicio de sesión exitoso!');
-        // Redirigir al archivo home.html
-        window.location.href = '../home.html'; 
+        
+        // Guardar datos del usuario logueado en sessionStorage
+        sessionStorage.setItem('usuarioLogueado', JSON.stringify({ nombre, apellido, email }));
+
+        // Redirigir al usuario a la página principal o de inicio
+        window.location.href = '../paginas/home.html';
     } else {
         alert('Nombre, apellido, email o contraseña incorrectos.');
     }

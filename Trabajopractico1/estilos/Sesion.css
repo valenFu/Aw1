@@ -57,7 +57,7 @@ body {
     color: white;
     border: none;
     border-radius: 5px; 
-    cursor: pointer;
+    cursor: pointer;   
 }
 
 .login-form input[type="submit"]:hover {
