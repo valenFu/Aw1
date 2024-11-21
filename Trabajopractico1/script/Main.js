@@ -1,7 +1,6 @@
 //estructura de datos
 const pages = [
     { title: "Inicio", url: "../index.html" },
-    { title: "Ropa Interior", url: "../paginas/Ropa_interior.html" },
     { title: "Ropa", url: "../paginas/Ropa.html" },
     { title: "Calzado", url: "../paginas/Calzado.html" },
     { title: "Artículos de Hogar", url: "../paginas/Hogar.html" },

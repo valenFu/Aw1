@@ -2,6 +2,7 @@
 @import 'navBar.css';
 @import 'item.css';
 @import 'ropaint.css';
+@import 'carrusel.css';
 
 body {
     background-color: #fffaf4;
@@ -151,5 +152,7 @@ nav {
     font-size: 0.5cm;
     font-weight: bold;
 }
+
+
 
 
