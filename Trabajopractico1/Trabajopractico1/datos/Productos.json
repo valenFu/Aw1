@@ -73,24 +73,6 @@
         "stock": 18
       },
       {
-        "id": 9,
-        "nombre": "Conjunto triangulo",
-        "categoria": "Ropa interior",
-        "descripcion": "Conjunto triangulo con microtul colores blanco, rojo y negro.",
-        "precio": 70.00,
-        "imagen": "conjunto triangulo de microtul.webp",
-        "stock": 28
-      },
-      {
-        "id": 10,
-        "nombre": "Conjunto triangulo",
-        "categoria": "Ropa interior",
-        "descripcion": "Conjunto triangulo del algodon colores blanco, gris y negro.",
-        "precio": 70.00,
-        "imagen": "conjunto triangulo de algodon.webp",
-        "stock": 6
-      }, 
-      {
         "id": 11,
         "nombre": "Colcha de Marie",
         "categoria": "Hogar",
